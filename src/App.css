@@ -1,0 +1,94 @@
+*{
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background: hsla(217, 100%, 50%, 1);
+  background: linear-gradient(90deg, #1422A1B8 30%, #00AFEBB8 70%);
+}
+
+.container_principal h3{
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px 40px;
+  border: 4px solid #E7E4E4;
+  text-align: center;
+  color: #1422A1B8;
+  display: inline-block;
+}
+
+.container_principal{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+div.contenedor_acordeones{
+  width: 95%;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* Estilos de los tabs */
+
+li.nav-item {
+  width: 50%;
+}
+
+button#uncontrolled-tab-example-tab-informacion, button#uncontrolled-tab-example-tab-procedimiento {
+  width: 100%;
+}
+
+.nav-tabs button.nav-link{
+  margin-bottom: 0;
+  border: none;
+}
+
+button#uncontrolled-tab-example-tab-informacion.nav-link.active, button#uncontrolled-tab-example-tab-procedimiento.nav-link.active{
+  border-bottom: 3px solid #000;
+  color: #000;
+  font-weight: bold;
+}
+
+button#uncontrolled-tab-example-tab-informacion.nav-link, button#uncontrolled-tab-example-tab-procedimiento.nav-link{
+  border-bottom: 3px solid #787777;
+  color: #787777;
+  font-weight: bold;
+}
+
+.accordion-item button{
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: #a0e2f8;
+}
+
+/* Esilos componente CampoInput */
+
+.container-campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: flex;
+  gap: 15px;
+}
+
+.container-campo input {
+  border-radius: 20px;
+  border: 3px solid #E7E4E4;
+}
+
+.container-campo label {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 13px;
+}
