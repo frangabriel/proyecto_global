@@ -87,6 +87,11 @@ button.accordion-button:not(.collapsed) {
   border: 3px solid #E7E4E4;
 }
 
+.container-campo select.quierosexo {
+  border-radius: 20px;
+  border: 3px solid #E7E4E4;
+}
+
 .container-campo label {
   padding-left: 10px;
   font-weight: 500;
