@@ -87,8 +87,7 @@ section.identificacion {
 
 .fila {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  grid-row: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
 }
 
