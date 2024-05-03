@@ -3,6 +3,7 @@ import { CampoInput } from '../comunes/CampoInput'
 import { CampoDate } from '../comunes/CampoDate'
 import { CampoTime } from '../comunes/CampoTime'
 import { CampoSelect } from '../comunes/CampoSelect'
+import { CampoTextArea } from '../comunes/CampoTextArea'
 
 export const Identificacion = () => {
   return (
@@ -56,6 +57,25 @@ export const Identificacion = () => {
         <div className='fila'>
             <CampoInput title='Numero de Seguro' id='numeroseguro' name='numeroseguro' />
             <CampoInput title='Poliza' id='poliza' name='poliza'/>
+        </div>
+        <div>
+        <CampoTextArea title='Informe o motivo de solicitud de servicio' id='informe' name='informe'/>
+        </div>
+        <hr className='linea'/>
+        <span className='subtitulo'>Examen fisico</span>
+        <div className='fila'>
+            <CampoInput title='Frecuencia cardiaca' id='frecardiaca' name='frecardiaca' />
+            <CampoInput title='Frecuencia respiratoria' id='frecrespiratoria' name='frecrespiratoria'/>
+            <CampoInput title='Presión arterial' id='presarterial' name='presarterial' />
+            <CampoInput title='Temperatura' id='temperatura' name='temperatura'/>
+        </div>
+
+        <span className='subtitulo'>Glasgow</span>
+        <div className='fila'>
+            <CampoInput title='RO' id='ro' name='ro' />
+            <CampoInput title='RV' id='rv' name='rv'/>
+            <CampoInput title='RM' id='rm' name='rm' />
+            <CampoInput title='Total' id='total' name='total'/>
         </div>
     </section>
   )

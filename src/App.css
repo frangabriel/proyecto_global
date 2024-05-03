@@ -72,22 +72,37 @@ button.accordion-button:not(.collapsed) {
 
 /* Esilos componente CampoInput */
 
+section.identificacion {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
+  grid-row: auto;
+  grid-gap: 10px;
+}
+
+
 .container-campo {
   display: flex;
   flex-direction: column;
 }
 
 .fila {
-  display: flex;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  grid-row: auto;
+  grid-gap: 10px;
 }
 
-.container-campo input {
+.container-campo input{
   border-radius: 20px;
   border: 3px solid #E7E4E4;
 }
+.container-campo textarea{
+  border-radius: 5px;
+  border: 3px solid #E7E4E4;
+  min-height: 80px;
+}
 
-.container-campo select.quierosexo {
+.container-campo select {
   border-radius: 20px;
   border: 3px solid #E7E4E4;
 }
@@ -96,4 +111,24 @@ button.accordion-button:not(.collapsed) {
   padding-left: 10px;
   font-weight: 500;
   font-size: 13px;
+}
+
+.container-campo > input, .container-campo > select, .container-campo > textarea {
+  padding: 3px 10px;
+  font-size: 13px;
+  outline: none;
+}
+
+.container-campo > input:focus, .container-campo > select:focus, .container-campo > textarea:focus {
+  border: 3px solid #a0e2f8;
+}
+
+hr.linea{
+  border-top: 5px solid #a7a0a0;
+  border-radius: 10px;
+}
+span.subtitulo{
+  text-align: center;
+  color: #535DB9;
+  font-weight: bold;
 }

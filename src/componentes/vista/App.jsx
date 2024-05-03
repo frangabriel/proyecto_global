@@ -2,6 +2,8 @@ import '../../App.css'
 import {Container, Row, Tabs, Tab} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import { Identificacion } from './Identificacion';
+import { Hallazgos } from './Hallazgos';
+
 
 function App() {
   
@@ -24,7 +26,7 @@ function App() {
               <Accordion.Item eventKey="1">
                 <Accordion.Header>HALLAZGOS CLINICOS O DATOS POSITIVOS</Accordion.Header>
                 <Accordion.Body>
-                  osita sexy
+                  <Hallazgos/>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
