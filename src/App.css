@@ -7,7 +7,7 @@ body{
   background: linear-gradient(90deg, #1422A1B8 30%, #00AFEBB8 70%);
 }
 
-.container_principal h3{
+.container_principal h5{
   margin-top: 20px;
   background-color: #fff;
   border-radius: 25px;
@@ -28,7 +28,7 @@ body{
 
 div.contenedor_acordeones{
   width: 95%;
-  min-height: 500px;
+  min-height: auto;
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
@@ -59,6 +59,10 @@ button#uncontrolled-tab-example-tab-informacion.nav-link, button#uncontrolled-ta
   border-bottom: 3px solid #787777;
   color: #787777;
   font-weight: bold;
+}
+
+button.accordion-button.collapsed:hover {
+  background-color: #a0e2f8;
 }
 
 .accordion-item button{

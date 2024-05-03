@@ -9,7 +9,7 @@ function App() {
   
   return (
     <section className='container_principal'>
-      <h3>CREACION DE HISTORIA CLINICA</h3>
+      <h5>CREACION DE HISTORIA CLINICA</h5>
       <div className='contenedor_acordeones'>
         <Tabs
         defaultActiveKey="informacion"

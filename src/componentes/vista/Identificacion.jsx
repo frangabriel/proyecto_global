@@ -69,7 +69,7 @@ export const Identificacion = () => {
             <CampoInput title='Presión arterial' id='presarterial' name='presarterial' />
             <CampoInput title='Temperatura' id='temperatura' name='temperatura'/>
         </div>
-
+        <hr className='linea'/>
         <span className='subtitulo'>Glasgow</span>
         <div className='fila'>
             <CampoInput title='RO' id='ro' name='ro' />
