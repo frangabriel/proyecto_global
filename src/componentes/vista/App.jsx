@@ -3,6 +3,7 @@ import {Container, Row, Tabs, Tab} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import { Identificacion } from './Identificacion';
 import { Hallazgos } from './Hallazgos';
+import { Diagnostico } from './Diagnostico';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
               <Accordion.Item eventKey="2">
                 <Accordion.Header>DIAGNOSTICO</Accordion.Header>
                 <Accordion.Body>
-                  osita sexy
+                  <Diagnostico/>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">

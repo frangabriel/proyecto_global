@@ -1,13 +1,19 @@
 import React from 'react'
 import '../../App.css'
 
-export const CampoSelect = ({title, id}) => {
+export const CampoSelect = ({title, id, name, opciones}) => {
+
+  console.log(opciones)
+
   return (
     <div className='container-campo'>
         <label htmlFor={id}>{title}</label>
-        <select>
-          <option value="masculino">Masculino</option>
-          <option value="femenino">Femenino</option>
+        <select name={name}>
+          {opciones.map((opcion)=> {
+            return(
+              <option  ption value={opcion.value}>{opcion.name}</option>
+            );
+          })}
         </select>
     </div>
   )

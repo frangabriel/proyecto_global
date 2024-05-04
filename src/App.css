@@ -95,10 +95,23 @@ section.identificacion {
   grid-gap: 10px;
 }
 
-.container-campo input{
+.container-campo input, div.rmsc.multi-select{
   border-radius: 20px;
   border: 3px solid #E7E4E4;
 }
+
+div.container-diagnostico{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.rmsc{
+  --rmsc-border: none;
+  --rmsc-radius:20px;
+  --rmsc-h:30px;
+}
+
 .container-campo textarea{
   border-radius: 5px;
   border: 3px solid #E7E4E4;
@@ -110,7 +123,7 @@ section.identificacion {
   border: 3px solid #E7E4E4;
 }
 
-.container-campo label {
+.container-campo label, label.titulomultiselect{
   padding-left: 10px;
   font-weight: 500;
   font-size: 13px;

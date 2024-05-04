@@ -4,6 +4,7 @@ import { CampoDate } from '../comunes/CampoDate'
 import { CampoTime } from '../comunes/CampoTime'
 import { CampoSelect } from '../comunes/CampoSelect'
 import { CampoTextArea } from '../comunes/CampoTextArea'
+import { generos } from '../../Data/opcionesGenero.js'
 
 export const Identificacion = () => {
   return (
@@ -28,7 +29,7 @@ export const Identificacion = () => {
             <CampoDate title='Fecha de nacimiento' id='nacimiento' name='nacimiento' />
             <CampoInput title='Edad' id='edad' name='edad'/>
             <CampoInput title='Telefono' id='telefono' name='telefono' />
-            <CampoSelect title='Sexo' id='sexo' name='sexo'/>
+            <CampoSelect title='Sexo' id='sexo' name='sexo' opciones={generos}/>
         </div>
         <div className='fila'>
             <CampoInput title='Direccion habitual' id='direccionhabitual' name='direccionhabitual' />
