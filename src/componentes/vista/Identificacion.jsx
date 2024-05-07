@@ -60,7 +60,7 @@ export const Identificacion = () => {
             <CampoInput title='Poliza' id='poliza' name='poliza'/>
         </div>
         <div>
-        <CampoTextArea title='Informe o motivo de solicitud de servicio' id='informe' name='informe'/>
+            <CampoTextArea title='Informe o motivo de solicitud de servicio' id='informe' name='informe'/>
         </div>
         <hr className='linea'/>
         <span className='subtitulo'>Examen fisico</span>

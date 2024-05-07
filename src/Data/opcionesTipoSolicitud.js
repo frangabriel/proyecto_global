@@ -1,4 +1,6 @@
 export const tipoSolicitudes = [
-    {value:'femenino', name:'Femenino'},
-    {value:'masculino', name:'Masculino'}
+    {value:'Telefono', name:'telefono'},
+    {value:'Radio', name:'radio'},
+    {value:'Personal', name:'personal'},
+    {value:'Observado', name:'observado'},
 ]

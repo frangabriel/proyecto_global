@@ -4,6 +4,8 @@ import Accordion from 'react-bootstrap/Accordion';
 import { Identificacion } from './Identificacion';
 import { Hallazgos } from './Hallazgos';
 import { Diagnostico } from './Diagnostico';
+import { Traslado } from './Traslado';
+import { ComponenteProcedimiento } from './ComponenteProcedimiento';
 
 
 function App() {
@@ -39,7 +41,7 @@ function App() {
               <Accordion.Item eventKey="3">
                 <Accordion.Header>MEDIO DE SOLICITUD DEL TRASLADO</Accordion.Header>
                 <Accordion.Body>
-                  osita sexy
+                  <Traslado/>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="4">
@@ -51,7 +53,7 @@ function App() {
             </Accordion>
           </Tab>
           <Tab eventKey="procedimiento" title="Procedimiento">
-            este es el perfil
+            <ComponenteProcedimiento/>
           </Tab>
         </Tabs>
       </div>

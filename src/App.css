@@ -148,3 +148,38 @@ span.subtitulo{
   color: #535DB9;
   font-weight: bold;
 }
+
+/* procedimientoCSS */
+
+section.contenedor_procedimiento{
+  height: 300px;
+  width: 100%;
+  border: 3px solid #a7a0a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+div.cuerpo{
+  height: 90%;
+  width: 48%;
+  border: 3px solid #a7a0a0;
+  padding: 10px;
+}
+
+div.detalles{
+  height: 90%;
+  width: 48%;
+  border: 3px solid #a7a0a0;
+  padding: 10px;
+}
+
+div.cuerpo span{
+  font-size: 10px;
+  font-weight: bold;
+}
+
+div.detalles div.container-campo, div.detalles textarea#prodetallado{
+  height: 100%;
+}
