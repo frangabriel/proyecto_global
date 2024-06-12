@@ -21,7 +21,7 @@ const options = [
   { label: "Descompresion", value: "descompresion" },
 ];
 
-export const CampoSelectMultiple = () => {
+export const CampoSelectMultiple = ({name, id}) => {
   const [selected, setSelected] = useState([]);
   console.log(selected);
 
@@ -29,6 +29,8 @@ export const CampoSelectMultiple = () => {
     <div>
       <label className="titulomultiselect">Seleciona un o varios</label>
       <MultiSelect
+        name={name}
+        id={id}
         options={options}
         value={selected}
         onChange={setSelected}

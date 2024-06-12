@@ -1,17 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../App.css'
 
-export const CampoSelect = ({title, id, name, opciones}) => {
-
-  console.log(opciones)
-
+export const CampoSelect = ({title, id, name, opciones, onChange}) => {
+  debugger;
   return (
     <div className='container-campo'>
         <label htmlFor={id}>{title}</label>
-        <select name={name}>
-          {opciones.map((opcion)=> {
+        <select name={name} id={id} onChange={onChange}>
+          {opciones.map((opcion,index)=> {
             return(
-              <option  ption value={opcion.value}>{opcion.name}</option>
+              <option key={index} value={opcion.value}>{opcion.name} </option>
             );
           })}
         </select>

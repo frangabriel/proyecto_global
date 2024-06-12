@@ -1,11 +1,11 @@
 import React from 'react'
 import '../../App.css'
 
-export const CampoTextArea = ({title, id}) => {
+export const CampoTextArea = ({title, id, name, onChange}) => {
   return (
     <div className='container-campo'>
         <label htmlFor={id}>{title}</label>
-        <textarea id={id}/>
+        <textarea id={id} name={name} onChange={onChange}/>
     </div>
   )
 }
