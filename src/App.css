@@ -183,3 +183,35 @@ div.cuerpo span{
 div.detalles div.container-campo, div.detalles textarea#prodetallado{
   height: 100%;
 }
+
+.container-button {
+  display:flex;
+  justify-content:flex-end;
+  margin-top: 15px; 
+}
+
+#buttonExportExcel {
+  padding: 10px 20px;  
+  font-size: 16px; 
+  background-color: #007bff; 
+  color: white;  
+  border: none; : pointer; 
+  border-radius: 5px; 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#buttonExportExcel:hover {
+  background-color: #085db7; 
+ }
+
+ #buttonExportExcel .iconExcel {
+  width: 28px; 
+  height: 28px;
+  background-image: url('./icons/excel-icon.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  margin-right: 10px; 
+  display:inline-block;
+}

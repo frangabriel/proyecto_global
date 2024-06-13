@@ -1,16 +1,17 @@
 import '../../App.css'
-import { Tabs, Tab} from 'react-bootstrap';
+import { useContext } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import { Identificacion } from './Identificacion';
 import { Hallazgos } from './Hallazgos';
 import { Diagnostico } from './Diagnostico';
 import { Traslado } from './Traslado';
 import { ComponenteProcedimiento } from './ComponenteProcedimiento';
-import { EstadoGlobalProvider } from '../context/EstadoGlobalContext';
+import { EstadoGlobalProvider, EstadoGlobalContext  } from '../context/EstadoGlobalContext';
+import { Tabs, Tab} from 'react-bootstrap';
 
 
 function App() {
-  
+
   return (
     <EstadoGlobalProvider>
       <section className='container_principal'>
@@ -58,6 +59,12 @@ function App() {
               <ComponenteProcedimiento/>
             </Tab>
           </Tabs>
+          <div className='container-button'>
+            <button id='buttonExportExcel'>
+              <span className='iconExcel'></span>
+              <span>Exportar Excel</span>
+            </button>
+          </div>
         </div>
       </section>
     </EstadoGlobalProvider>
