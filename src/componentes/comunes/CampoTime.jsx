@@ -1,4 +1,4 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
 import '../../App.css'
 
 export const CampoTime = ({title, id, name, onChange}) => {

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+/* eslint-disable no-debugger */
+/* eslint-disable react/prop-types */
 import '../../App.css'
 
 export const CampoSelect = ({title, id, name, opciones, onChange}) => {

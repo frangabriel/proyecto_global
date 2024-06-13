@@ -1,42 +1,43 @@
-import React, { useState } from "react";
+/* eslint-disable react/prop-types */
+import { useState, useEffect, useContext } from "react";
 import { MultiSelect } from "react-multi-select-component";
+import { EstadoGlobalContext } from '../context/EstadoGlobalContext';
+import { options } from '../../Data/opcionesDatosPositivos.js';
 
-const options = [
-  { label: "Oxigenaciòn", value: "oxigenacion" },
-  { label: "Aspiración", value: "aspiracion" },
-  { label: "Ventilación", value: "ventilacion" },
-  { label: "Intubación", value: "intubacion" },
-  { label: "Rccp", value: "rccp" },
-  { label: "ventilacion mecánica", value: "ventilacion_mecanica" },
-  { label: "Monitoreo", value: "monitoreo" },
-  { label: "Sutura", value: "sutura" },
-  { label: "Compresion", value: "compresion" },
-  { label: "Vendas", value: "vendas" },
-  { label: "Inmovilizacion", value: "inmovilizacion" },
-  { label: "Collar cervical", value: "collar_cervical" },
-  { label: "Parto", value: "parto" },
-  { label: "Apsesia", value: "apsesia" },
-  { label: "Infusión de liquidos", value: "infusion_liquidos" },
-  { label: "Administracion de medicamentos", value: "adm_medicamentos" },
-  { label: "Descompresion", value: "descompresion" },
-];
-
-export const CampoSelectMultiple = ({name, id}) => {
+export const CampoSelectMultiple = ({ name, id }) => {
+  const { estadoGlobal, setEstadoGlobal } = useContext(EstadoGlobalContext);
   const [selected, setSelected] = useState([]);
-  console.log(selected);
+
+  const handleSelectionChange = (selectedOptions) => {
+    setSelected(selectedOptions);
+    const values = selectedOptions.map(option => option.value);
+
+    // Actualiza el estado global directamente
+    setEstadoGlobal(prevState => ({
+      ...prevState,
+      hallazgos: {
+        ...prevState.hallazgos,
+        [name]: values
+      }
+    }));
+  };
+
+  useEffect(() => {
+    // Puedes agregar aquí un console.log para verificar el estado actualizado
+    console.log(estadoGlobal);
+  }, [estadoGlobal]);
 
   return (
     <div>
-      <label className="titulomultiselect">Seleciona un o varios</label>
+      <label className="titulomultiselect">Selecciona uno o varios</label>
       <MultiSelect
         name={name}
         id={id}
         options={options}
         value={selected}
-        onChange={setSelected}
+        onChange={handleSelectionChange}
         labelledBy="Select"
       />
     </div>
   );
 };
-

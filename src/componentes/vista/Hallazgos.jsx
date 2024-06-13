@@ -1,6 +1,6 @@
-import React from 'react';
+/* eslint-disable no-debugger */
 import { CampoSelectMultiple } from '../comunes/CampoSelectMultiple';
-
+ 
 
 export const Hallazgos = () => {
   return (

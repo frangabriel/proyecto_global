@@ -1,5 +1,5 @@
 import '../../App.css'
-import {Container, Row, Tabs, Tab} from 'react-bootstrap';
+import { Tabs, Tab} from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
 import { Identificacion } from './Identificacion';
 import { Hallazgos } from './Hallazgos';
