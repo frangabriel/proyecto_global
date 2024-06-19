@@ -6,7 +6,7 @@ import { EstadoGlobalContext } from '../context/EstadoGlobalContext';
 export const Diagnostico = () => {
   const { estadoGlobal, setEstadoGlobal } = useContext(EstadoGlobalContext);
 
-  const handleChange = (e) => {
+  const handleChange = (e) => { 
     debugger;
     const { name, value } = e.target;
     setEstadoGlobal(prevState => ({

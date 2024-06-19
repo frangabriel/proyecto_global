@@ -5,8 +5,9 @@ import { Identificacion } from './Identificacion';
 import { Hallazgos } from './Hallazgos';
 import { Diagnostico } from './Diagnostico';
 import { Traslado } from './Traslado';
+import { BtnExcel } from '../comunes/BtnExcel';
 import { ComponenteProcedimiento } from './ComponenteProcedimiento';
-import { EstadoGlobalProvider, EstadoGlobalContext  } from '../context/EstadoGlobalContext';
+import { EstadoGlobalProvider } from '../context/EstadoGlobalContext';
 import { Tabs, Tab} from 'react-bootstrap';
 
 
@@ -50,7 +51,7 @@ function App() {
                 <Accordion.Item eventKey="4">
                   <Accordion.Header>RESPONSABLE DE LA ATENCION</Accordion.Header>
                   <Accordion.Body>
-                    osita sexy
+                    ya casi
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
@@ -59,12 +60,7 @@ function App() {
               <ComponenteProcedimiento/>
             </Tab>
           </Tabs>
-          <div className='container-button'>
-            <button id='buttonExportExcel'>
-              <span className='iconExcel'></span>
-              <span>Exportar Excel</span>
-            </button>
-          </div>
+          <BtnExcel />
         </div>
       </section>
     </EstadoGlobalProvider>
